@@ -3,9 +3,208 @@
      <head>
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <link rel="stylesheet" crossorigin href="/assets/index-Di3G5ut_.css">
+          <title>Şevket Eren Kaynar</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="stylesheet" crossorigin href="/assets/index-BGvWvSg1.css">
      </head>
-     <body>
-          <h1 class="text-3xl font-bold underline">Hello world!</h1>
+
+     <body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
+          <!-- Navbar -->
+          <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur shadow z-50">
+               <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+                    <span class="text-2xl font-extrabold tracking-tight" style="color: #3e6ff4">Şevket Eren Kaynar</span>
+                    <!-- Masaüstü Menü -->
+                    <ul class="hidden md:flex space-x-4 md:space-x-8 text-base">
+                         <li><a href="#about" class="nav-link hover:text-[#3e6ff4] hover:underline-none font-medium transition-colors">About</a></li>
+                         <li><a href="#skills" class="nav-link hover:text-[#3e6ff4] hover:underline-none font-medium transition-colors">Skills</a></li>
+                         <li><a href="#projects" class="nav-link hover:text-[#3e6ff4] hover:underline-none font-medium transition-colors">Projects</a></li>
+                         <li><a href="#experience" class="nav-link hover:text-[#3e6ff4] hover:underline-none font-medium transition-colors">Experience</a></li>
+                         <li><a href="#education" class="nav-link hover:text-[#3e6ff4] hover:underline-none font-medium transition-colors">Education</a></li>
+                         <li><a href="#contact" class="nav-link hover:text-[#3e6ff4] hover:underline-none font-medium transition-colors">Contact</a></li>
+                    </ul>
+                    <!-- Hamburger Menü (Mobil) -->
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded focus:outline-none focus:ring-2" style="--tw-ring-color: #3e6ff4" aria-label="Menüyü Aç">
+                         <i class="fas fa-bars fa-lg"></i>
+                    </button>
+               </div>
+               <!-- Mobil Dropdown Menü -->
+               <div id="mobileMenu" class="absolute left-0 top-full w-full bg-white shadow-lg z-40 flex-col md:hidden hidden">
+                    <a href="#about" class="nav-link block py-3 px-6 text-lg font-medium hover:text-[#3e6ff4] border-b border-gray-100">About</a>
+                    <a href="#skills" class="nav-link block py-3 px-6 text-lg font-medium hover:text-[#3e6ff4] border-b border-gray-100">Skills</a>
+                    <a href="#projects" class="nav-link block py-3 px-6 text-lg font-medium hover:text-[#3e6ff4] border-b border-gray-100">Projects</a>
+                    <a href="#experience" class="nav-link block py-3 px-6 text-lg font-medium hover:text-[#3e6ff4] border-b border-gray-100">Experience</a>
+                    <a href="#education" class="nav-link block py-3 px-6 text-lg font-medium hover:text-[#3e6ff4] border-b border-gray-100">Education</a>
+                    <a href="#contact" class="nav-link block py-3 px-6 text-lg font-medium hover:text-[#3e6ff4]">Contact</a>
+               </div>
+          </nav>
+
+          <main class="flex-1 pt-24">
+               <!-- Hero Section -->
+               <section class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-12">
+                    <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left gap-6">
+                         <h1 class="text-4xl md:text-6xl font-black text-[#3e6ff4] leading-tight">Merhaba, ben Şevket Eren KAYNAR</h1>
+                         <h2 class="text-xl md:text-2xl font-semibold text-gray-700">Yazılım Geliştirici</h2>
+                         <p class="text-lg max-w-xl">Elektronik ve yazılım alanlarında yenilikçi teknolojileri kullanarak, sürdürülebilir, modüler ve kullanıcı odaklı projeler geliştiriyorum. SOLID prensipleri ve temiz kod anlayışıyla, değişime açık ve ölçeklenebilir çözümler sunuyorum.</p>
+                         <div class="flex gap-4 mt-2">
+                              <a href="#contact" class="bg-[#3e6ff4] text-white px-6 py-2 rounded-full font-bold shadow hover:bg-[#3e6ff4] transition">İletişime Geç</a>
+                              <a href="#projects" class="bg-white border border-[#3e6ff4] text-[#3e6ff4] px-6 py-2 rounded-full font-bold shadow transition hover:bg-[#3e6ff4] hover:text-white">Projelerim</a>
+                         </div>
+                         <div class="flex gap-4 mt-6">
+                              <a href="mailto:erenkaynar@example.com" class="text-gray-500 hover:text-[#3e6ff4]" aria-label="Mail"><i data-feather="mail" class="w-6 h-6"></i></a>
+                              <a href="#" class="text-gray-500 hover:text-[#3e6ff4]" aria-label="GitHub"><i data-feather="github" class="w-6 h-6"></i></a>
+                              <a href="#" class="text-gray-500 hover:text-[#3e6ff4]" aria-label="LinkedIn"><i data-feather="linkedin" class="w-6 h-6"></i></a>
+                         </div>
+                    </div>
+                    <div class="flex-1 flex justify-center">
+                         <img src="https://avatars.githubusercontent.com/u/57995093?v=4&size=512" alt="Şevket Eren KAYNAR" class="w-56 h-56 rounded-full border-8 shadow-xl object-cover" style="border-color: #3e6ff4" />
+                    </div>
+               </section>
+
+               <!-- About Section -->
+               <section id="about" class="max-w-6xl mx-auto px-6 py-10">
+                    <div class="bg-white/90 rounded-2xl shadow-xl p-10 flex flex-col md:flex-row items-center">
+                         <div class="flex-shrink-0 hidden md:block">
+                              <i data-feather="user" class="w-16 h-16 text-[#3e6ff4]"></i>
+                         </div>
+                         <div>
+                              <h2 class="text-3xl font-extrabold mb-2 tracking-tight text-center" style="color: #3e6ff4">About</h2>
+                              <div class="w-16 h-1 rounded mx-auto my-4" style="background: #3e6ff4"></div>
+                              <p class="text-lg">
+                                   10 yıldır elektrik, elektronik ve yazılım geliştirme alanlarına yoğun ilgi duymaktayım. 4 yıl önce Bionluk platformunda freelance çalışmaya başladım ve bu süreçte Java, C#, Kotlin, Node.js, Firebase ve MSSQL teknolojilerinde deneyim kazandım. C# ve Node.js kullanarak, Singleton, Middleware Pattern gibi yapısal tasarım patternlarını uyguladığım REST API projeleri
+                                   tasarladım ve geliştirdim. Mobil uygulama geliştirme süreçlerinde MVVM mimarisi ile sürdürülebilir ve modüler çözümler üzerinde çalıştım.<br /><br />Kod kalitesini artırmak ve bakımı kolaylaştırmak adına SOLID prensiplerine önem veririm. Teknik dökümantasyonları etkin şekilde analiz ederek karşılaşılan problemlere hızlı ve kalıcı çözümler üretme konusunda
+                                   deneyimliyim. Açık kaynak kütüphaneler ve elektronik entegrasyonlu projelerdeki deneyimlerimle, değişen teknolojilere ve proje gereksinimlerine hızla adapte olabilen bir yaklaşım geliştirdim. Müşteri ihtiyaçlarını analiz ederek, teknik çözümleri temiz kod prensipleriyle birleştirme konusunda deneyimliyim. Sürekli öğrenme motivasyonumla sektörün dinamiklerine uyum
+                                   sağlıyor, dökümantasyon ve en iyi uygulamaları takip ederek mesleki yetkinliklerimi ileri taşıyorum. Hedefim, yalnızca teknik becerilerle değil, ölçeklenebilir sistemler tasarlama disipliniyle teknoloji dünyasına değer katan bir yazılım geliştirici olmaktır.
+                              </p>
+                         </div>
+                    </div>
+               </section>
+
+               <!-- Skills Section -->
+               <section id="skills" class="max-w-6xl mx-auto px-6 py-10">
+                    <div>
+                         <h2 class="text-3xl font-extrabold mb-2 tracking-tight text-center" style="color: #3e6ff4">Skills</h2>
+                         <div class="w-16 h-1 rounded mx-auto my-4" style="background: #3e6ff4"></div>
+                         <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-base font-medium">
+                              <li class="bg-white rounded-xl shadow p-4 flex flex-col items-center gap-2 hover:scale-105 transition">
+                                   <i class="fab fa-java fa-2x" style="color: #3e6ff4"></i>
+                                   <span>Java</span>
+                                   <span class="text-xs text-gray-500 text-center">Backend ve genel yazılım geliştirme deneyimi</span>
+                              </li>
+                              <li class="bg-white rounded-xl shadow p-4 flex flex-col items-center gap-2 hover:scale-105 transition">
+                                   <i class="fab fa-node-js fa-2x" style="color: #3e6ff4"></i>
+                                   <span>Node.js</span>
+                                   <span class="text-xs text-gray-500 text-center">REST API, Middleware Pattern, elektronik entegrasyon</span>
+                              </li>
+                              <li class="bg-white rounded-xl shadow p-4 flex flex-col items-center gap-2 hover:scale-105 transition">
+                                   <i class="fas fa-database fa-2x" style="color: #3e6ff4"></i>
+                                   <span>MSSQL & Firebase</span>
+                                   <span class="text-xs text-gray-500 text-center">Veritabanı yönetimi ve bulut tabanlı çözümler</span>
+                              </li>
+                              <li class="bg-white rounded-xl shadow p-4 flex flex-col items-center gap-2 hover:scale-105 transition">
+                                   <i class="fab fa-korvue fa-2x" style="color: #3e6ff4"></i>
+                                   <span>Kotlin</span>
+                                   <span class="text-xs text-gray-500 text-center">Mobil uygulama geliştirme, MVVM mimarisi</span>
+                              </li>
+                              <li class="bg-white rounded-xl shadow p-4 flex flex-col items-center gap-2 hover:scale-105 transition">
+                                   <i class="fab fa-microsoft fa-2x" style="color: #3e6ff4"></i>
+                                   <span>C#</span>
+                                   <span class="text-xs text-gray-500 text-center">REST API, Singleton Pattern, SOLID prensipleri</span>
+                              </li>
+                              <li class="bg-white rounded-xl shadow p-4 flex flex-col items-center gap-2 hover:scale-105 transition">
+                                   <i class="fas fa-cubes fa-2x" style="color: #3e6ff4"></i>
+                                   <span>Design Patterns</span>
+                                   <span class="text-xs text-gray-500 text-center">Singleton, Middleware, MVVM, SOLID</span>
+                              </li>
+                              <li class="bg-white rounded-xl shadow p-4 flex flex-col items-center gap-2 hover:scale-105 transition">
+                                   <i class="fas fa-book fa-2x" style="color: #3e6ff4"></i>
+                                   <span>Teknik Dökümantasyon</span>
+                                   <span class="text-xs text-gray-500 text-center">Analiz, problem çözme ve hızlı adaptasyon</span>
+                              </li>
+                              <li class="bg-white rounded-xl shadow p-4 flex flex-col items-center gap-2 hover:scale-105 transition">
+                                   <i class="fas fa-code-branch fa-2x" style="color: #3e6ff4"></i>
+                                   <span>Açık Kaynak & Entegrasyon</span>
+                                   <span class="text-xs text-gray-500 text-center">Açık kaynak kütüphaneler ve elektronik projeler</span>
+                              </li>
+                         </ul>
+                    </div>
+               </section>
+
+               <!-- Projects Section -->
+               <section id="projects" class="max-w-6xl mx-auto px-6 py-10">
+                    <h2 class="text-3xl font-extrabold mb-2 tracking-tight text-center" style="color: #3e6ff4">Projects</h2>
+                    <div class="w-16 h-1 rounded mx-auto my-4" style="background: #3e6ff4"></div>
+                    <div id="projects-list" class="flex flex-col gap-8">
+                         <div id="projects-loading" class="text-center text-gray-500 py-8">Loading projects...</div>
+                    </div>
+               </section>
+
+               <!-- Experience Section -->
+               <section id="experience" class="max-w-6xl mx-auto px-6 py-10">
+                    <div>
+                         <h2 class="text-3xl font-extrabold mb-2 tracking-tight text-center" style="color: #3e6ff4">Experience</h2>
+                         <div class="w-16 h-1 rounded mx-auto my-4" style="background: #3e6ff4"></div>
+                         <ul class="space-y-6">
+                              <li class="bg-white rounded-xl shadow p-6 flex flex-col gap-2 hover:scale-105 transition">
+                                   <div class="font-semibold text-lg">Freelance Yazılım Geliştirici, Bionluk</div>
+                                   <div class="text-sm text-gray-600">2021 - Halen</div>
+                                   <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                                        <li>Degz Robotics için motor testi android mobil uygulaması</li>
+                                        <li>Bir internet sağlayıcının saha ekibi için anten yönü android mobil uygulama</li>
+                                        <li>Üniversite öğrencileri için Smart Disc Lock: motosiklet disk kilidi android uygulaması, prototipi, gömülü yazılımı, Rest API'si, MQTT Broker sunucusu</li>
+                                   </ul>
+                              </li>
+                         </ul>
+                    </div>
+               </section>
+
+               <!-- Education Section -->
+               <section id="education" class="max-w-6xl mx-auto px-6 py-10">
+                    <div>
+                         <h2 class="text-3xl font-extrabold mb-2 tracking-tight text-center" style="color: #3e6ff4">Education</h2>
+                         <div class="w-16 h-1 rounded mx-auto my-4" style="background: #3e6ff4"></div>
+                         <ul class="flex flex-col gap-6">
+                              <li class="bg-white rounded-xl shadow p-6 hover:scale-105 transition flex items-center gap-4">
+                                   <img src="https://www.dogus.edu.tr/docs/default-source/kurumsalkimlik/dogus-university-logo-english-svg.svg?sfvrsn=8d0aa71f_6" alt="Doğuş Üniversitesi" class="w-16 h-16 min-w-16 min-h-16 aspect-square object-contain rounded bg-gray-100" />
+                                   <div>
+                                        <div class="font-semibold text-lg">Doğuş Üniversitesi</div>
+                                        <div class="text-sm text-gray-600">Bilgisayar Mühendisliği - 2023-halen</div>
+                                        <div class="text-gray-700">Yazılım geliştirme, algoritmalar ve proje yönetimi üzerine yoğun eğitim. Kulüp ve topluluklarda aktif rol.</div>
+                                   </div>
+                              </li>
+                              <li class="bg-white rounded-xl shadow p-6 hover:scale-105 transition flex items-center gap-4">
+                                   <div>
+                                        <div class="font-semibold text-lg">TEB Ataşehir Anadolu Lisesi</div>
+                                        <div class="text-sm text-gray-600">Sayısal Bölüm - 2019-2023</div>
+                                        <div class="text-gray-700">Fen ve matematik ağırlıklı eğitim. Bilimsel projelerde ve sosyal etkinliklerde aktif katılım.</div>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+               </section>
+
+               <!-- Contact Section -->
+               <section id="contact" class="max-w-6xl mx-auto px-6 py-10">
+                    <div>
+                         <h2 class="text-3xl font-extrabold mb-2 tracking-tight text-center" style="color: #3e6ff4">Contact</h2>
+                         <div class="w-16 h-1 rounded mx-auto my-4" style="background: #3e6ff4"></div>
+                         <div class="max-w-md mx-auto text-center">
+                              <a href="mailto:erenkaynar@example.com" class="inline-block text-lg font-semibold bg-gray-100 px-6 py-4 rounded-xl shadow hover:bg-gray-50 transition">contact@erenkaynar.tr</a>
+                         </div>
+                    </div>
+               </section>
+          </main>
+
+          <!-- Footer -->
+          <footer class="bg-gray-900 text-white py-12 mt-8 shadow-inner flex flex-col items-center justify-center gap-12">
+               <div class="text-3xl md:text-4xl font-extrabold text-center">Şevket Eren KAYNAR</div>
+               <div class="flex gap-6">
+                    <a href="https://github.com/sqayner" class="hover:text-[#3e6ff4]" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.instagram.com/erenkynr" class="hover:text-[#3e6ff4]" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://x.com/sqayner" class="hover:text-[#3e6ff4]" aria-label="X-Twitter"><i class="fab fa-x-twitter fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/sqayner/" class="hover:text-[#3e6ff4]" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+               </div>
+               <div class="text-sm text-gray-300">&copy; 2024 Şevket Eren KAYNAR. All rights reserved.</div>
+          </footer>
      </body>
+     <script src="/src/main.js"></script>
 </html>
